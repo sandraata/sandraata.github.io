@@ -1,0 +1,46 @@
+.loadFont (@Weight; @fontfile; @fontname) {
+    font-family: @fontname;
+    src: url('/assets/fonts/@{fontfile}.eot');
+    src: local(@fontname),
+    local(@fontfile),
+    url('/assets/fonts/@{fontfile}.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/@{fontfile}.otf') format('opentype'),
+    url('/assets/fonts/@{fontfile}.ttf') format('truetype'),
+    url('/assets/fonts/@{fontfile}.svg#@{fontname}') format('svg');
+    font-weight: @Weight;
+    font-style: normal;
+}
+
+@font-face {
+    .loadFont(400; 'RALEWAY-BOLD'; 'Raleway Bold');
+}
+@font-face {
+    .loadFont(400; 'CAIRO-REGULAR'; 'Cairo Regular');
+}
+@font-face {
+    .loadFont(400; 'RALEWAY-BOLDITALIC'; 'Raleway Bold Italic');
+}
+@font-face {
+    .loadFont(400; 'RALEWAY-EXTRABOLD'; 'Raleway Extra Bold');
+}
+@font-face {
+    .loadFont(400; 'RALEWAY-SEMIBOLD'; 'Raleway Semi Bold');
+}
+@font-face {
+    .loadFont(400; 'RALEWAY-LIGHT'; 'Raleway Light');
+}
+@font-face {
+    .loadFont(400; 'ACASLONPRO-SEMIBOLD'; 'AcaslonPro Semi Bold');
+}
+@font-face {
+    .loadFont(400; 'ACASLONPRO-REGULAR'; 'AcaslonPro Regular');
+}
+@font-face {
+    .loadFont(400; 'MONTSERRAT-LIGHT'; 'Montserrat Light');
+}
+@font-face {
+    .loadFont(400; 'MONTSERRAT-SEMIBOLD'; 'Montserrat Semi Bold');
+}
+@font-face {
+    .loadFont(400; 'MONTSERRAT-BOLD'; 'Montserrat Bold');
+}
